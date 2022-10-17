@@ -4,7 +4,11 @@ public class TryingMethods {
         TryingMethods priscilla = new TryingMethods();
         System.out.println(priscilla.getDayofTheWeek(1));
         priscilla.weightCheck(52);
+
+        System.out.println(whileloop());
+    
     }
+        
 
     String getDayofTheWeek (int day){
         String dayOfTheWeek="";
@@ -46,7 +50,15 @@ public class TryingMethods {
         else if (weight <=49) {
             System.out.println("underweight");
         }
-        
+     }
+    
+    public static int whileloop () {
+        int sum=0, i=1;
+        while(i<1000){
+            sum+=i;
+            i++;
+        }
+        return sum;    
     }
 }
 
