@@ -3,6 +3,7 @@ public class TryingMethods {
     public static void main(String[] args) {
         TryingMethods priscilla = new TryingMethods();
         System.out.println(priscilla.getDayofTheWeek(1));
+        priscilla.weightCheck(52);
     }
 
     String getDayofTheWeek (int day){
@@ -35,4 +36,19 @@ public class TryingMethods {
         return dayOfTheWeek;
 
       }
+      public void weightCheck (int weight){
+        if (weight >=70) {
+            System.out.println("Obese");
+        }
+        else if (weight >= 50 && weight <=69) {
+            System.out.println("Normal");
+        }
+        else if (weight <=49) {
+            System.out.println("underweight");
+        }
+        
+    }
 }
+
+
+
